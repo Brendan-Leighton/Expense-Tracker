@@ -34,7 +34,7 @@
   
   ## Project Demo
   
-  [!Project Preview](https://www.example.com)
+  ![Project Preview](./public/images/screenshot.png)
 
   ## Built With
 
