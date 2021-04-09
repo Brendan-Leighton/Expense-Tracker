@@ -1,0 +1,82 @@
+header.home-hero {
+    --hero-height: 60vh;
+    background-image: url('../../images/dollar-signs.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw var(--hero-height);
+    width: 100vw;
+    height: var(--hero-height);
+
+    text-align: center;
+    color: white;
+}
+div.header-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.712);
+    height: 100%;
+    width: 100vw;
+}
+h1.home-header {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.rotate-text > span {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+div.rotate-text > span {
+        opacity: 0;
+        font-size: 2rem;
+        width: 15ch
+}
+
+span.text-1 {
+    position: relative;
+    animation: rotate-text-1 10s ease infinite both;
+    /* transform: translateX(100%); */
+}
+span.text-2 {
+    animation: rotate-text-2 10s ease infinite both;
+}
+span.text-3 {
+    animation: rotate-text-3 10s ease infinite both;
+}
+@keyframes rotate-text-1 {
+    0% {
+        opacity: 0;   
+    }
+    15% {
+        opacity: 1;   
+    }
+    30% {
+        opacity: 0;
+    }
+}
+@keyframes rotate-text-2 {
+    35% {
+        opacity: 0;   
+    }
+    50% {
+        opacity: 1;   
+    }
+    65% {
+        opacity: 0;
+    }
+}
+@keyframes rotate-text-3 {
+    70% {
+        opacity: 0;   
+    }
+    85% {
+        opacity: 1;   
+    }
+    100% {
+        opacity: 0;
+    }
+}
