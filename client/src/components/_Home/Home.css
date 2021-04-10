@@ -13,7 +13,7 @@ div.header-overlay {
     position: relative;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: var(--clr-black-transparent);
     height: 100%;
     width: 100vw;
 }
@@ -33,7 +33,7 @@ div.rotate-text > span {
 div.rotate-text > span {
         opacity: 0;
         font-size: 2rem;
-        width: 15ch
+        width: 18ch
 }
 
 span.text-1 {

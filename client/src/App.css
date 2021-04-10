@@ -1,3 +1,8 @@
+:root {
+    --clr-primary: white;
+    --clr-secondary: red;
+    --clr-black-transparent: rgba(0, 0, 0, 0.712);
+}
 h1 {
     font-size: 4rem;
 }

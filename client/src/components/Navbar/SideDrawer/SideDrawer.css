@@ -1,0 +1,42 @@
+.side-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    padding:2rem 10vw;
+
+    height: 100vh;
+    min-width: 10ch;
+    background-color: var(--clr-secondary);
+    animation: drawer-open 300ms linear;
+}
+@keyframes drawer-open {
+    0% {
+        transform: translateX(100%);
+    }
+}
+.side-drawer-links:active {
+    text-decoration: underline;
+}
+
+.side-drawer-back-drop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--clr-black-transparent);
+}
+.close-drawer {
+    background-color: var(--clr-secondary);
+    color: white;
+    border: none;
+}

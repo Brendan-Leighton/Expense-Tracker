@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    padding: 0 10vw 0 9vw;
+    background-color: red;
+    font-size: large;
+    z-index: 999;    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-bars-button {
+    display: none;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.fa-bars-button:hover {
+    color: pink;
+}
+
+@media screen and (max-width: 629px) {
+    .nav-links {
+        display: none;
+    }
+
+    .fa-bars-button {
+        display: block;
+    }
+}
+
