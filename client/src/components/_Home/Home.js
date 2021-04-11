@@ -3,7 +3,7 @@ import './Home.css';
 //  COMPONENTS
 import CardInfo from '../Cards/Info/CardInfo';
 import CardTestimonials from '../Cards/Testimonials/CardTestimonials';
-// import CardPricing from '../Cards/Info/CardPricing';
+import CardPricing from '../Cards/Pricing/CardPricing';
 
 export default function Home() {
     return (
@@ -64,17 +64,25 @@ export default function Home() {
 
             <section className="pricing-info">
                 <h2>Pick A Plan!</h2>
-                <div className="card-pricing">
-                    <h3>Try it FREE!</h3>
-                    <p>for 30 days.</p>
-                </div>
-                <div className="card-pricing">
-                    <h3>Monthly</h3>
-                    <p>$3.99/mo</p>
-                </div>
-                <div className="card-pricing">
-                    <h3>Yearly</h3>
-                    <p>$30/yr</p>
+                <div className="pricing-cards">
+                    <CardPricing
+                        title="Try it FREE!"
+                        subtitle="for 30 days."
+                        buttonLink=""
+                        disclaimer="Auto renews at $3.99 after 30 days."
+                    />
+                    <CardPricing
+                        title="Monthly"
+                        subtitle="$3.99/mo"
+                        buttonLink=""
+                        disclaimer="If you haven't used the free trial it will automatically be applied for the first 30 days"
+                    />
+                    <CardPricing
+                        title="Yearly"
+                        subtitle="$30/yr"
+                        buttonLink=""
+                        disclaimer="If you haven't used the free trial it will automatically be applied for the first 30 days"
+                    />
                 </div>
             </section>
 

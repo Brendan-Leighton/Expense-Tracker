@@ -13,7 +13,6 @@ div.testimonial-cards {
     flex-direction: column;
     gap: var(--card-testimonial-spacer);
 
-    /* border: 3px solid black; */
     border-radius: 10px;
     -webkit-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.79); 
     box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.79);
