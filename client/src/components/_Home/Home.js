@@ -1,5 +1,10 @@
 import './Home.css';
 
+//  COMPONENTS
+import CardInfo from '../Cards/Info/CardInfo';
+// import CardTestimonials from '../Cards/Info/CardTestimonials';
+// import CardPricing from '../Cards/Info/CardPricing';
+
 export default function Home() {
     return (
         <>
@@ -13,23 +18,24 @@ export default function Home() {
                     </div>
                 </div>
             </header>
-            
+
             <section className="sales-pitch">
                 <h2>Why Budget Buddy?</h2>
-                <div className="tree-columns">
-                    <div>
-                        <h3>The Experience</h3>
-                        <p>Ugh, Budgeting money? That sounds daunting. Although most people will never like budgeting, our software ensures a pain-free experience.</p>
-                    </div>
-                    <div>
-                        <h3>Be In The Know</h3>
-                        <p>Most people who start tracking their expenses are shocked by just how much money they spend on things. If you work 5 days a week, eat out for lunch each day spending $5, that's $100 a month! </p>
-                    </div>
-                    <div>
-                        <h3>What Money Troubles?</h3>
-                        <p>Creating and following a budget eliminates 99.99% of money troubles, while also providing funds for more fun.</p>
-                    </div>
-                </div>
+                <CardInfo
+                    title="The Experience"
+                    text="Ugh, Budgeting money? That sounds daunting. Although most people will never like budgeting, our software ensures a pain-free experience."
+                    image="https://source.unsplash.com/random/200x200"
+                />
+                <CardInfo
+                    title="Be In The Know"
+                    text="Most people who start tracking their expenses are shocked by just how much money they spend on things. If you work 5 days a week, eat out for lunch each day spending $5, that's $100 a month!"
+                    image="https://source.unsplash.com/random/200x200"
+                />
+                <CardInfo
+                    title="What Money Troubles?"
+                    text="Creating and following a budget eliminates 99.99% of money troubles, while also providing funds for more fun."
+                    image="https://source.unsplash.com/random/200x200"
+                />
             </section>
 
             <section className="testimonials">

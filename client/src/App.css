@@ -3,6 +3,12 @@
     --clr-secondary: red;
     --clr-black-transparent: rgba(0, 0, 0, 0.712);
 }
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
 h1 {
     font-size: 4rem;
+}
+section {
+    padding: 5rem 0;
 }

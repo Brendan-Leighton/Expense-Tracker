@@ -1,5 +1,8 @@
+/* 
+    HERO SECTION
+*/
 header.home-hero {
-    --hero-height: 60vh;
+    --hero-height: 100vh;
     background-image: url('../../images/dollar-signs.jpg');
     background-repeat: no-repeat;
     background-size: 100vw var(--hero-height);
@@ -35,7 +38,7 @@ div.rotate-text > span {
         font-size: 2rem;
         width: 18ch
 }
-
+/*  ROTATING TEXT UNDER PAGE HEADER  */
 span.text-1 {
     position: relative;
     animation: rotate-text-1 10s ease infinite both;
@@ -79,4 +82,23 @@ span.text-3 {
     100% {
         opacity: 0;
     }
+}
+
+/* 
+    OTHER SECTIONS
+*/
+section.sales-pitch {
+    background-color: aquamarine;
+}
+.two-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+    padding: 3rem 0;
+}
+.two-columns img {
+    border-radius: 2px;
 }
