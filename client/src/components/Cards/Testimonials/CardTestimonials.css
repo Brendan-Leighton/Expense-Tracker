@@ -1,0 +1,39 @@
+:root {
+    --card-testimonial-spacer: 1.5rem;
+}
+div.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--card-testimonial-spacer);
+
+}
+.card-testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-testimonial-spacer);
+
+    /* border: 3px solid black; */
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.79); 
+    box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.79);
+
+    padding: var(--card-testimonial-spacer);
+}
+.card-testimonial img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    max-width: 50px;
+
+    border-radius: 50%;
+}
+.card-testimonial p.card-text {
+    max-width: 30ch;
+}
+.card-testimonial p.card-author {
+    position: relative;
+    left: 100%;
+    transform: translateX(-50%);
+}

@@ -2,7 +2,7 @@ import './Home.css';
 
 //  COMPONENTS
 import CardInfo from '../Cards/Info/CardInfo';
-// import CardTestimonials from '../Cards/Info/CardTestimonials';
+import CardTestimonials from '../Cards/Testimonials/CardTestimonials';
 // import CardPricing from '../Cards/Info/CardPricing';
 
 export default function Home() {
@@ -39,18 +39,26 @@ export default function Home() {
             </section>
 
             <section className="testimonials">
-                <h2>What Others Say</h2>
-                <div className="card-testimonial">
-                    <img className="card-image" src="https://source.unsplash.com/random/50x50" alt="" />
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero quam recusandae iure dicta doloremque magnam minima reiciendis labore vitae.</p>
-                </div>
-                <div className="card-testimonial">
-                    <img className="card-image" src="https://source.unsplash.com/random/50x50" alt="" />
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero quam recusandae iure dicta doloremque magnam minima reiciendis labore vitae.</p>
-                </div>
-                <div className="card-testimonial">
-                    <img className="card-image" src="https://source.unsplash.com/random/50x50" alt="" />
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero quam recusandae iure dicta doloremque magnam minima reiciendis labore vitae.</p>
+                <header>
+                    <h2>What Others Say</h2>
+                </header>
+                <div className="testimonial-cards">
+
+                    <CardTestimonials
+                        image="https://source.unsplash.com/random/50x50"
+                        author="Michelle Langley"
+                        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero quam recusandae iure dicta doloremque magnam minima reiciendis labore vitae."
+                    />
+                    <CardTestimonials
+                        image="https://source.unsplash.com/random/50x50"
+                        author="Sarah Johnson"
+                        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero quam recusandae iure dicta doloremque magnam minima reiciendis labore vitae."
+                    />
+                    <CardTestimonials
+                        image="https://source.unsplash.com/random/50x50"
+                        author="David Butterman"
+                        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero quam recusandae iure dicta doloremque magnam minima reiciendis labore vitae."
+                    />
                 </div>
             </section>
 

@@ -33,7 +33,7 @@ div.card-info {
         border-radius: 2px;
 
     }
-
+/*  horizontally swap the even's layout  */
     div.card-info:nth-child(even) header {
         grid-area: 1/2;
     }
