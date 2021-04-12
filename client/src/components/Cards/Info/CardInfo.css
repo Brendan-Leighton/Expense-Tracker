@@ -5,8 +5,6 @@ div.card-info {
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-
-    padding: 3rem 0;
 }
 .card-info p {
     max-width: 30ch;
@@ -24,8 +22,12 @@ div.card-info {
     .card-info header {
         grid-area: 1/1;
     }
+    .card-info header h3 {
+        text-align: right;
+    }
     .card-info p {
         grid-area: 2/1;
+        text-align: right;
     }
     .card-info img {
         grid-area: -1/2/3;
@@ -37,8 +39,12 @@ div.card-info {
     div.card-info:nth-child(even) header {
         grid-area: 1/2;
     }
+    .card-info:nth-child(even) header h3 {
+        text-align: left;
+    }
     div.card-info:nth-child(even) p {
         grid-area: 2/2;
+        text-align: left;
     }
     div.card-info:nth-child(even) img {
         grid-area: -1/1/3;

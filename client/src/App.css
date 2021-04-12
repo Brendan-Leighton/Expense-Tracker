@@ -10,5 +10,8 @@ h1 {
     font-size: 4rem;
 }
 section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     padding: 5rem 0;
 }
