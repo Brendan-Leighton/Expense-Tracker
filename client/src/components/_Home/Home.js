@@ -4,6 +4,7 @@ import './Home.css';
 import CardInfo from '../Cards/Info/CardInfo';
 import CardTestimonials from '../Cards/Testimonials/CardTestimonials';
 import CardPricing from '../Cards/Pricing/CardPricing';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 export default function Home() {
     return (
@@ -20,7 +21,9 @@ export default function Home() {
             </header>
 
             <section className="sales-pitch">
-                <h2>Why Budget Buddy?</h2>
+                <SectionHeader
+                    title="Why Budget Buddy?"
+                />
                 <CardInfo
                     title="The Experience"
                     text="Ugh, Budgeting money? That sounds daunting. Although most people will never like budgeting, our software ensures a pain-free experience."
@@ -39,11 +42,10 @@ export default function Home() {
             </section>
 
             <section className="testimonials">
-                <header>
-                    <h2>What Others Say</h2>
-                </header>
+                <SectionHeader
+                    title="What Others Say"
+                />
                 <div className="testimonial-cards">
-
                     <CardTestimonials
                         image="https://source.unsplash.com/random/50x50"
                         author="Michelle Langley"
@@ -63,7 +65,9 @@ export default function Home() {
             </section>
 
             <section className="pricing-info">
-                <h2>Pick A Plan!</h2>
+                <SectionHeader
+                    title="Pick A Plan!"
+                />
                 <div className="pricing-cards">
                     <CardPricing
                         title="Try it FREE!"
