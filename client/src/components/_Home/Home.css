@@ -2,10 +2,11 @@
     HERO SECTION
 */
 header.home-hero {
-    --hero-height: 100vh;
-    background-image: url('../../images/dollar-signs.jpg');
+    --hero-height: 50vh;
+    margin-top: 50px;
+    background-image: url('../../images/laptop-dashboard.jpg');
     background-repeat: no-repeat;
-    background-size: 100vw var(--hero-height);
+    background-size: contain;
     width: 100vw;
     height: var(--hero-height);
 
@@ -87,8 +88,17 @@ span.text-3 {
 /* 
     OTHER SECTIONS
 */
-section.sales-pitch {
-    background-color: aquamarine;
+
+section.pricing-info, section.sales-pitch {
+    background-color: var(--clr-near-white);
+    color: var(--clr-dark);
+}
+section.pricing-info h2, section.sales-pitch h2, section.sales-pitch h3 {
+    color: var(--clr-dark);
+}
+section.testimonials {
+    background-color: var(--clr-dark);
+    color: var(--clr-dark);
 }
 .two-columns {
     display: flex;

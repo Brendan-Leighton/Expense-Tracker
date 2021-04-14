@@ -7,6 +7,7 @@ div.testimonial-cards {
     justify-content: center;
     gap: var(--card-testimonial-spacer);
 
+
 }
 .card-testimonial {
     display: flex;
@@ -14,10 +15,12 @@ div.testimonial-cards {
     gap: var(--card-testimonial-spacer);
 
     border-radius: 10px;
-    -webkit-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.79); 
-    box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.79);
+    -webkit-box-shadow: var(--box-shadow); 
+    box-shadow: var(--box-shadow);
 
     padding: var(--card-testimonial-spacer);
+
+    background-color: var(--clr-near-white);
 }
 .card-testimonial img {
     position: relative;
@@ -34,5 +37,6 @@ div.testimonial-cards {
 .card-testimonial p.card-author {
     position: relative;
     left: 100%;
-    transform: translateX(-50%);
+    transform: translateX(-100%);
+    width: fit-content;
 }
