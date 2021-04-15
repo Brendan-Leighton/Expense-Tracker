@@ -10,4 +10,5 @@
 .nav-link:hover {
     cursor: pointer;
     color: var(--clr-bright);
+    font-weight: 700;
 }

@@ -5,10 +5,8 @@ import SideDrawer from './SideDrawer/SideDrawer';
 import BackDrop from './SideDrawer/BackDrop';
 //  STYLESHEET
 import './Navbar.css';
-//  FONT AWESOME ICONS
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-
+//  ICONS
+import { FaBars } from 'react-icons/fa';
 import { GiTakeMyMoney } from 'react-icons/gi';
 
 export default function Navbar() {
@@ -19,8 +17,6 @@ export default function Navbar() {
     const toggleSideDrawer = () => {
         setDisplaySideDrawer(prevState => !prevState);
     }
-
-    const hamburgerMenu = <FontAwesomeIcon icon={faBars} />
 
     const logoStyles = {
         color: "white",
@@ -66,7 +62,7 @@ export default function Navbar() {
                 {mapLinks()}
             </span>
             <button className="fa-bars-button" onClick={toggleSideDrawer}>
-                {hamburgerMenu}
+                <FaBars />
             </button>
             <SideDrawer
                 links={navbarLinkData}

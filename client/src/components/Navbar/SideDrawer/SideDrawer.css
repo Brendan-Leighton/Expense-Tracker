@@ -7,22 +7,29 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.5rem;
-    padding:2rem 10vw;
+    gap: 0.75rem;
+    padding:4rem 10vw;
 
     height: 100vh;
     min-width: 10ch;
     background-color: var(--clr-dark);
     color: var(--clr-light);
     animation: drawer-open 300ms linear;
+
+    font-size: 1.5rem;
 }
 @keyframes drawer-open {
     0% {
         transform: translateX(100%);
     }
 }
-.side-drawer-links:active {
-    text-decoration: underline;
+
+.side-drawer a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-bright);
 }
 
 .side-drawer-back-drop {
@@ -37,7 +44,13 @@
     background-color: var(--clr-black-transparent);
 }
 .close-drawer {
+    position: absolute;
+    top: 9px;
+    right: 10vw;
+
+    font-size: 2rem;
+
     background-color: var(--clr-secondary);
-    color: white;
+    color: var(--clr-near-white);
     border: none;
 }
