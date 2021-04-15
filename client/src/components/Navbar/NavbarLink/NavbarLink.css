@@ -1,10 +1,13 @@
 .nav-links .nav-link {
     padding-left: 15px;
 }
+.nav-link {
+    text-decoration: none;
+}
+.nav-link:visited {
+    color: var(--clr-near-white);
+}
 .nav-link:hover {
     cursor: pointer;
-    color: var(--primary-color);
-}
-.nav-link:active {
-    text-decoration: underline;
+    color: var(--clr-bright);
 }

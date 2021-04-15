@@ -11,7 +11,7 @@ import { testimonialData } from '../../data/testimonials';
 export default function Home() {
     return (
         <>
-            <header className="home-hero">
+            <header className="home-hero" id="scroll-top">
                 <div className="header-overlay">
                     <h1 className="home-header">Budget Buddy</h1>
                     <div className="rotate-text">
@@ -22,7 +22,7 @@ export default function Home() {
                 </div>
             </header>
 
-            <section className="sales-pitch">
+            <section className="sales-pitch" id="scroll-learn-why">
                 <SectionHeader
                     title="Why Budget Buddy?"
                 />
@@ -43,7 +43,7 @@ export default function Home() {
                 />
             </section>
 
-            <section className="testimonials">
+            <section className="testimonials" id="scroll-testimonials">
                 <SectionHeader
                     title="What Others Say"
                 />
@@ -52,7 +52,7 @@ export default function Home() {
                 />
             </section>
 
-            <section className="pricing-info">
+            <section className="pricing-info" id="scroll-pricing">
                 <SectionHeader
                     title="Pick A Plan!"
                 />

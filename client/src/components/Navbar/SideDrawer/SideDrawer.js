@@ -20,30 +20,7 @@ export default function SideDrawer(props) {
             <button className="close-drawer" onClick={props.onClick}>
                 {closeIcon}
             </button>
-            <NavbarLink
-                name="Top"
-                id="scroll-top"
-                sideDrawer='true'
-                onClick={props.onClick}
-            />
-            <NavbarLink
-                name="Link 1"
-                id="#"
-                sideDrawer='true'
-                onClick={props.onClick}
-            />
-            <NavbarLink
-                name="Link 2"
-                id="#"
-                sideDrawer='true'
-                onClick={props.onClick}
-            />
-            <NavbarLink
-                name="Link 3"
-                id="#"
-                sideDrawer='true'
-                onClick={props.onClick}
-            />
+            {props.mapLinks}
         </div>
         , document.getElementById('portal')
     )

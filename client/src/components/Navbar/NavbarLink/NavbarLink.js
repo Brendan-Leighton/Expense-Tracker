@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 
 //  STYLE imports
 import './NavbarLink.css';
@@ -9,27 +8,21 @@ export default function NavbarLink(props) {
     if (props.sideDrawer) {
         return (
             <div className="side-drawer-links">
-                <Link
+                <a
                     className="nav-link"
-                    to={props.id}
-                    smooth="true"
-                    duration={500}
-                    offset={-50}
+                    href={`#${props.id}`}
                     onClick={props.onClick}
                 >{props.name}
-                </Link>
+                </a>
             </div>
         )
     }
 
     return (
-        <Link
+        <a
             className="nav-link"
-            to={props.id}
-            smooth="true"
-            duration={500}
-            offset={-45}
+            href={`#${props.id}`}
         >{props.name}
-        </Link>
+        </a>
     )
 }

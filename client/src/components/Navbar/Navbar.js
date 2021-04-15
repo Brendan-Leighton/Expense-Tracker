@@ -9,6 +9,8 @@ import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import { GiTakeMyMoney } from 'react-icons/gi';
+
 export default function Navbar() {
 
 
@@ -20,33 +22,55 @@ export default function Navbar() {
 
     const hamburgerMenu = <FontAwesomeIcon icon={faBars} />
 
-    
+    const logoStyles = {
+        color: "white",
+        fontSize: "2rem"
+    }
+
+    const navbarLinkData = [
+        {
+            name: "Learn Why",
+            id: "scroll-learn-why"
+        },
+        {
+            name: "Reviews",
+            id: "scroll-testimonials"
+        },
+        {
+            name: "Pricing",
+            id: "scroll-pricing"
+        },
+    ]
+
+    const mapLinks = () => {
+        return navbarLinkData.map((links, index) => {
+            return (
+                <NavbarLink
+                    name={links.name}
+                    id={links.id}
+                    key={index}
+                    sideDrawer={displaySideDrawer}
+                    onClick={toggleSideDrawer}
+                />
+            )
+        })
+    }
+
 
     return (
         <nav id="navbar">
-            <NavbarLink
-                name="Top"
-                id="scroll-top"
-            />
-
+            <a href="#top">
+                <GiTakeMyMoney className="nav-link" style={logoStyles} />
+            </a>
             <span className="nav-links">
-                <NavbarLink
-                    name="About"
-                    id="#"
-                />
-                <NavbarLink
-                    name="Projects"
-                    id="#"
-                />
-                <NavbarLink
-                    name="Contact"
-                    id="#"
-                />
+                {mapLinks()}
             </span>
             <button className="fa-bars-button" onClick={toggleSideDrawer}>
-                    {hamburgerMenu}
+                {hamburgerMenu}
             </button>
             <SideDrawer
+                links={navbarLinkData}
+                mapLinks={mapLinks()}
                 open={displaySideDrawer}
                 onClick={toggleSideDrawer}
             />

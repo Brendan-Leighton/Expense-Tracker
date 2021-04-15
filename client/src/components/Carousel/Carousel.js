@@ -24,7 +24,7 @@ export default function Carousel(props) {
             {props.data.map((testimonial, index) => {
                 return (
                     <>
-                        <div className={index === currentSlide ? 'carousel-slide active' : 'carousel-slide'}>
+                        <div className={index === currentSlide ? 'carousel-slide active' : 'carousel-slide'} key={index}>
                             <button onClick={nextSlide}>Right</button>
                             <button onClick={prevSlide}>Left</button>
                             <CardTestimonial

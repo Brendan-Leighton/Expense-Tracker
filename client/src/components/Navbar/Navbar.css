@@ -23,9 +23,10 @@ nav {
     background-color: var(--clr-dark);
     color: white;
     border: none;
+    font-size: 1.5rem;
 }
 .fa-bars-button:hover {
-    color: pink;
+    color: var(--clr-bright);
 }
 
 @media screen and (max-width: 629px) {
