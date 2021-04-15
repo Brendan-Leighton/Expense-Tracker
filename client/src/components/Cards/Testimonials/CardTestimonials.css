@@ -1,19 +1,18 @@
 :root {
     --card-testimonial-spacer: 1.5rem;
 }
-div.testimonial-cards {
+/* div.testimonial-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--card-testimonial-spacer);
 
 
-}
+} */
 .card-testimonial {
     display: flex;
     flex-direction: column;
     gap: var(--card-testimonial-spacer);
-
     border-radius: 10px;
     -webkit-box-shadow: var(--box-shadow); 
     box-shadow: var(--box-shadow);

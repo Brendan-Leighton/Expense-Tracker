@@ -1,16 +1,16 @@
 :root {
     --clr-dark: rgb(37, 37, 37);
-    --clr-bright: rgb(24, 216, 24);
-    --clr-light: rgb(73, 9, 73);
+    --clr-bright: hsl(120, 80%, 47%);
+    --clr-light: hsl(120, 36%, 47%);
     --clr-black-transparent: rgba(0, 0, 0, 0.61);
     --clr-light-background: #ff903c;
-    --clr-near-white: #da9959;
+    --clr-near-white: #cacaca;
 
     --box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.79)
 }
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    color: white;
+    color: var(--clr-near-white);
 }
 h1 {
     font-size: 3.5rem;
@@ -26,6 +26,4 @@ section {
     flex-direction: column;
     gap: 3rem;
     padding: 5rem 0;
-
-    color: var(--clr-dark);
 }

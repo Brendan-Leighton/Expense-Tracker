@@ -2,9 +2,11 @@ import './Home.css';
 
 //  COMPONENTS
 import CardInfo from '../Cards/Info/CardInfo';
-import CardTestimonials from '../Cards/Testimonials/CardTestimonials';
 import CardPricing from '../Cards/Pricing/CardPricing';
+import Carousel from '../Carousel/Carousel';
 import SectionHeader from '../SectionHeader/SectionHeader';
+//  DATA
+import { testimonialData } from '../../data/testimonials';
 
 export default function Home() {
     return (
@@ -45,23 +47,9 @@ export default function Home() {
                 <SectionHeader
                     title="What Others Say"
                 />
-                <div className="testimonial-cards">
-                    <CardTestimonials
-                        image="https://source.unsplash.com/random/50x50"
-                        author="Michelle Langley"
-                        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero quam recusandae iure dicta doloremque magnam minima reiciendis labore vitae."
-                    />
-                    <CardTestimonials
-                        image="https://source.unsplash.com/random/50x50"
-                        author="Sarah Johnson"
-                        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero quam recusandae iure dicta doloremque magnam minima reiciendis labore vitae."
-                    />
-                    <CardTestimonials
-                        image="https://source.unsplash.com/random/50x50"
-                        author="David Butterman"
-                        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero quam recusandae iure dicta doloremque magnam minima reiciendis labore vitae."
-                    />
-                </div>
+                <Carousel
+                    data={testimonialData}
+                />
             </section>
 
             <section className="pricing-info">

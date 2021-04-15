@@ -12,7 +12,8 @@
 
     height: 100vh;
     min-width: 10ch;
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
     animation: drawer-open 300ms linear;
 }
 @keyframes drawer-open {

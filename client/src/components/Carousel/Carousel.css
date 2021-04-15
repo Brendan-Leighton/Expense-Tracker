@@ -1,0 +1,16 @@
+.carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: none;
+}
+.carousel-slide {
+    display: none;
+}
+.carousel-slide.active {
+    display: block;
+    /* width: 100%; */
+}
