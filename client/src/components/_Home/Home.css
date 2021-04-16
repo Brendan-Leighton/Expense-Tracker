@@ -3,10 +3,11 @@
 */
 header.home-hero {
     --hero-height: 100vh;
-    margin-top: 50px;
-    background-image: url('../../images/laptop-dashboard.jpg');
+    /* margin-top: 50px; */
+    background-image: url('../../images/laptop-right.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-position: 50% 0;
     width: 100vw;
     height: var(--hero-height);
 
@@ -24,20 +25,32 @@ div.header-overlay {
 h1.home-header {
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-100%);
 }
 
 div.rotate-text > span {
     position: absolute;
-    top: 75%;
+    top: 60%;
     left: 50%;
     transform: translateX(-50%);
+
+    opacity: 0;
+    font-size: 2rem;
+    width: 18ch
 }
-div.rotate-text > span {
-        opacity: 0;
-        font-size: 2rem;
-        width: 18ch
+@media screen and (min-width: 1000px) {
+    h1.home-header {
+        top: 15%;
+        left: 10vw;
+        transform: translateY(0%);
+        text-align: left;
+    }
+    div.rotate-text > span {
+        top: 30%;
+        left: 10vw;
+        transform: translateX(0%);
+        text-align: left;
+    }
 }
 /*  ROTATING TEXT UNDER PAGE HEADER  */
 span.text-1 {
