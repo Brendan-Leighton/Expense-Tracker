@@ -2,51 +2,84 @@
     HERO SECTION
 */
 header.home-hero {
+    overflow-y: hidden;
+    position: relative;
     --hero-height: 100vh;
     /* margin-top: 50px; */
-    background-image: url('../../images/laptop-right.jpg');
+    /* background-image: url('../../images/Leprechaun-cuate.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 0;
+    background-size: 50vh auto;
+    background-position: right; */
+    background-color: var(--clr-dark);
     width: 100vw;
     height: var(--hero-height);
 
-    text-align: center;
     color: white;
 }
-div.header-overlay {
+img.hero-img {
+    overflow: hidden;
+    position: relative;
+    top: 37.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 50vh;
+    width: 50vh;
+}
+/* div.header-overlay {
     position: relative;
     top: 0;
     left: 0;
     background-color: var(--clr-black-transparent);
     height: 100%;
     width: 100vw;
-}
+} */
 h1.home-header {
+    z-index: 2;
     position: relative;
-    top: 50%;
-    transform: translateY(-100%);
+    top: 10%;
+    left: 50%;
+    width: 6ch;
+    transform: translate(-50%, 0%);
 }
 
 div.rotate-text > span {
+    z-index: 2;
     position: absolute;
-    top: 60%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
 
     opacity: 0;
     font-size: 2rem;
-    width: 18ch
+    width: 18ch;
+    text-align: center;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 568px) {
+    /* 568x */
+    header.home-hero {
+        padding: 0 10vw;
+        background-size: 75vh auto;
+        background-position: 300%, 50%;
+    }
+    img.hero-img {
+        --responsive-image-size: 80vh;
+        height: var(--responsive-image-size);
+        width: var(--responsive-image-size);
+        /* left: 75%; */
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
     h1.home-header {
         top: 15%;
-        left: 10vw;
+        left: -2px;
         transform: translateY(0%);
         text-align: left;
+        width: 20ch;
     }
     div.rotate-text > span {
-        top: 30%;
+        top: 40%;
         left: 10vw;
         transform: translateX(0%);
         text-align: left;

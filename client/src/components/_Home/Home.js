@@ -1,4 +1,5 @@
 import './Home.css';
+import HeaderImage from '../../images/Leprechaun-cuate.svg';
 
 //  COMPONENTS
 import CardInfo from '../Cards/Info/CardInfo';
@@ -12,14 +13,13 @@ export default function Home() {
     return (
         <>
             <header className="home-hero" id="scroll-top">
-                <div className="header-overlay">
-                    <h1 className="home-header">Budget Buddy</h1>
-                    <div className="rotate-text">
-                        <span className="text-1">1. Create a Budget</span>
-                        <span className="text-2">2. Save Money</span>
-                        <span className="text-3">3. Buy Nicer Things</span>
-                    </div>
+                <h1 className="home-header">Budget Buddy</h1>
+                <div className="rotate-text">
+                    <span className="text-1">1. Create a Budget</span>
+                    <span className="text-2">2. Save Money</span>
+                    <span className="text-3">3. Buy Nicer Things</span>
                 </div>
+                <img className="hero-img" src={HeaderImage} alt="" srcset=""/>
             </header>
 
             <section className="sales-pitch" id="scroll-learn-why">
